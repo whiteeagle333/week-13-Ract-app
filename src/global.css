@@ -1,0 +1,19 @@
+/* Set a background image for the entire HTML document, and center it both horizontally and vertically */
+
+html {
+  background-image: url("./images/computer 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* For screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  /* Set the object-fit property to cover for the HTML element */
+  html {
+    object-fit: cover;
+    /* Set the background-size property to cover the entire screen */
+    background-size: 100% 100%;
+    /* Set the height of the HTML element to 100% of the viewport height */
+    height: 100vh;
+  }
+}

@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import the React library
 
+import React from "react";
+// import the CSS file for the App component
+import "./App.css";
+// import the Navigation component
+import Navigation from "./Navigation";
+// import the LoginForm component
+import LoginForm from "./LoginForm";
+// define the App function component
 function App() {
+  // return the JSX for the App component
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <LoginForm />
     </div>
   );
 }
-
+// export the App component as the default export
 export default App;

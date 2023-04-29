@@ -1,0 +1,8 @@
+/* Styles for elements with the class "login-form" */
+.login-form {
+  background-image: url("images/banner 2.PNG"); /* Set a background image */
+}
+.login-form {
+  background-color: #333; /* Set a background color */
+  /* add any other styles you want */
+}

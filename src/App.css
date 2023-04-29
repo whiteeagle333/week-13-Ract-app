@@ -1,38 +1,134 @@
+/* 
+This section styles the overall container of the app,
+ setting its alignment and background color,
+ and uses Flexbox to align its content vertically in the center of the container.
+
+*/
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 50vh; /* set height to 100% of viewport height */
+}
+/*
+This section styles the navigation bar, using Flexbox to horizontally center its 
+content, and setting its background color, height, padding, width, and border radius.
+*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #1a062d;
+  height: 3.125em; /* equivalent to 50px */
+  padding: 0 1.875em; /* equivalent to 40px */
+  width: 100vw;
+  border-radius: 10px;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #1a062d;
+  height: 50px;
+  padding: 0 40px;
+  width: 100vw;
+  border-radius: 10px;
+} */
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+/*
+This section uses a media query to modify the navigation bar's layout when the 
+screen width is less than or equal to 768px, changing the flex-direction of the 
+unordered list to column and aligning its items to the center.
+*/
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*
+This section styles the list items and anchor tags within the navigation bar, setting
+their margins and colors.
+*/
+.navbar li {
+  margin: 0 100px;
+}
+
+.navbar li a {
+  color: #e0f0f1;
+  text-decoration: none;
+}
+/*
+This section styles the body of the page, using Flexbox to center its content
+horizontally and vertically in the center of the page, and setting its height 
+and margin.
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 0;
+}
+/*
+This section styles the navigation bar of the page, setting its background color, text
+color, using Flexbox to distribute its content along the horizontal axis, and setting
+ its padding.
+*/
+nav {
+  background-color: #333;
   color: white;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.App-link {
-  color: #61dafb;
+  padding: 10px;
 }
+/*
+This section styles the login form of the page, setting its border, padding, using
+Flexbox to align its content horizontally, setting its maximum width, and adding a 
+margin to the top.
+*/
+.login-form {
+  border: 1px solid #fafbfb;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+/*
+This section styles the login button within the login form, setting its background 
+color, font size, text color, margin, and border radius.
+*/
+.login-btn {
+  background-color: rgb(255, 0, 115);
+  font-size: 1em;
+  color: white;
+  margin-top: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px;
+}
+/*
+The login-form CSS class defines styles for a login form component in a web page. 
+It includes properties for the background image, height, alignment, box-shadow,
+ and text-shadow.
+*/
+.login-form {
+  background-image: url("images2/banner 1.PNG ");
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  box-shadow: 0 10px 40px rgba(223, 6, 169, 0.904);
+  text-shadow: 2px 4px 4px #ff0084;
 }
